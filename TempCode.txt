@@ -1,0 +1,21 @@
+   //20160804 yhz添加  散拼线路上限数量校验
+        if (form1.linecount_limit.value.length!=0)
+        {             
+            alert("1");
+            var val=form1.linecount_limit.value;            
+            var result=val.match(/^\d{1,2}$/);
+            if(result==null)
+            {
+                alert("散拼线路上限数量有误，请填写有效数字！");
+                form1.linecount_limit.focus();    
+                return (false);
+            }
+
+            alert("ok");
+        }
+
+        alert("2");
+
+
+======================================================================
+action="AddOKDepartment.asp"
